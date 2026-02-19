@@ -1,0 +1,450 @@
+<!doctype html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Scorecard de Recrutement</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            .font-montserrat {
+                font-family: "Montserrat", sans-serif;
+            }
+            .font-roboto {
+                font-family: "Roboto", sans-serif;
+            }
+            .card-shadow {
+                box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div
+            class="w-[1280px] h-[720px] bg-slate-50 relative flex flex-col overflow-hidden font-roboto"
+        >
+            <!-- Header Section -->
+            <div
+                class="bg-white h-20 px-12 flex items-center justify-between shadow-sm z-20"
+            >
+                <div class="flex items-center space-x-3">
+                    <div class="bg-blue-900 text-white p-1.5 rounded shadow-sm">
+                        <i class="fas fa-code-branch text-lg"></i>
+                    </div>
+                    <span
+                        class="text-xl font-bold text-slate-800 font-montserrat"
+                        >DevInnov'</span
+                    >
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span
+                        class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wide"
+                        >Étape 1</span
+                    >
+                    <h1
+                        class="text-xl font-bold text-slate-700 font-montserrat"
+                    >
+                        La Scorecard
+                    </h1>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="flex-1 flex p-10 space-x-8 overflow-hidden relative">
+                <!-- Background decorative element -->
+                <div
+                    class="absolute bottom-0 right-0 w-1/3 h-full bg-slate-100 z-0 transform skew-x-12 translate-x-20"
+                ></div>
+                <!-- Left Panel: Objectives (30%) -->
+                <div class="w-[32%] flex flex-col z-10">
+                    <div
+                        class="bg-blue-900 text-white rounded-2xl p-8 h-full flex flex-col shadow-2xl relative overflow-hidden"
+                    >
+                        <!-- Decorative circle -->
+                        <div
+                            class="absolute -top-16 -right-16 w-48 h-48 bg-blue-800 rounded-full opacity-50"
+                        ></div>
+                        <div
+                            class="absolute bottom-10 -left-10 w-32 h-32 bg-blue-800 rounded-full opacity-30"
+                        ></div>
+                        <div class="relative z-10">
+                            <h2 class="text-2xl font-bold font-montserrat mb-2">
+                                Objectifs du Poste
+                            </h2>
+                            <p
+                                class="text-blue-200 text-sm font-medium mb-8 border-b border-blue-700 pb-4"
+                            >
+                                Horizon 12 mois
+                            </p>
+                            <div class="space-y-8">
+                                <div class="flex group">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-blue-800 flex items-center justify-center flex-shrink-0 shadow-lg group-hover:bg-blue-700 transition-colors"
+                                    >
+                                        <i
+                                            class="fas fa-server text-yellow-400 text-xl"
+                                        ></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h3
+                                            class="font-bold text-lg leading-tight mb-1"
+                                        >
+                                            Architecture &amp; Perf.
+                                        </h3>
+                                        <p
+                                            class="text-blue-100 text-sm leading-snug"
+                                        >
+                                            Déployer microservices et améliorer
+                                            les performances de
+                                            <span
+                                                class="font-bold text-yellow-400"
+                                                >30%</span
+                                            >.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex group">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-blue-800 flex items-center justify-center flex-shrink-0 shadow-lg group-hover:bg-blue-700 transition-colors"
+                                    >
+                                        <i
+                                            class="fas fa-shipping-fast text-green-400 text-xl"
+                                        ></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h3
+                                            class="font-bold text-lg leading-tight mb-1"
+                                        >
+                                            Livraison Features
+                                        </h3>
+                                        <p
+                                            class="text-blue-100 text-sm leading-snug"
+                                        >
+                                            Livrer
+                                            <span class="font-bold text-white"
+                                                >3 features majeures</span
+                                            >
+                                            par trimestre en continu.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex group">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-blue-800 flex items-center justify-center flex-shrink-0 shadow-lg group-hover:bg-blue-700 transition-colors"
+                                    >
+                                        <i
+                                            class="fas fa-rocket text-red-400 text-xl"
+                                        ></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h3
+                                            class="font-bold text-lg leading-tight mb-1"
+                                        >
+                                            Automatisation
+                                        </h3>
+                                        <p
+                                            class="text-blue-100 text-sm leading-snug"
+                                        >
+                                            Réduire le temps de déploiement de
+                                            <span class="font-bold text-white"
+                                                >50%</span
+                                            >.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Panel: Competencies Cards (70%) -->
+                <div class="w-[68%] flex flex-col z-10">
+                    <div class="mb-6">
+                        <h2
+                            class="text-3xl font-extrabold text-slate-800 font-montserrat"
+                        >
+                            Matrice de Compétences
+                        </h2>
+                        <p class="text-slate-500 mt-1">
+                            Critères classés par niveau de priorité pour le
+                            filtrage
+                        </p>
+                    </div>
+                    <div class="flex-1 grid grid-cols-3 gap-5">
+                        <!-- Red Card -->
+                        <div
+                            class="bg-white rounded-2xl card-shadow border-t-8 border-red-500 flex flex-col transform hover:-translate-y-1 transition-transform duration-300"
+                        >
+                            <div class="p-6 pb-2">
+                                <div
+                                    class="flex justify-between items-start mb-2"
+                                >
+                                    <div class="bg-red-50 p-2 rounded-lg">
+                                        <i
+                                            class="fas fa-exclamation-triangle text-red-500 text-xl"
+                                        ></i>
+                                    </div>
+                                    <i
+                                        class="fas fa-square text-red-500 text-3xl shadow-sm border border-red-200 rounded"
+                                    ></i>
+                                </div>
+                                <h3
+                                    class="text-lg font-bold text-slate-800 font-montserrat"
+                                >
+                                    Carton Rouge
+                                </h3>
+                                <p
+                                    class="text-xs font-bold text-red-500 uppercase tracking-wider"
+                                >
+                                    Indispensables
+                                </p>
+                            </div>
+                            <div class="px-6 pb-6 flex-1">
+                                <div
+                                    class="w-full h-px bg-slate-100 mb-4"
+                                ></div>
+                                <ul class="space-y-3">
+                                    <li
+                                        class="flex items-start text-sm text-slate-600"
+                                    >
+                                        <i
+                                            class="fas fa-check text-red-500 mt-1 mr-2.5 flex-shrink-0"
+                                        ></i>
+                                        <p class="leading-snug">
+                                            Maîtrise
+                                            <span
+                                                class="font-semibold text-slate-800"
+                                                >JavaScript</span
+                                            >
+                                            (Node.js, React/Vue/Angular)
+                                        </p>
+                                    </li>
+                                    <li
+                                        class="flex items-start text-sm text-slate-600"
+                                    >
+                                        <i
+                                            class="fas fa-check text-red-500 mt-1 mr-2.5 flex-shrink-0"
+                                        ></i>
+                                        <p class="leading-snug">
+                                            Bases de données
+                                            <span
+                                                class="font-semibold text-slate-800"
+                                                >SQL &amp; NoSQL</span
+                                            >
+                                        </p>
+                                    </li>
+                                    <li
+                                        class="flex items-start text-sm text-slate-600"
+                                    >
+                                        <i
+                                            class="fas fa-check text-red-500 mt-1 mr-2.5 flex-shrink-0"
+                                        ></i>
+                                        <p class="leading-snug">
+                                            Versioning
+                                            <span
+                                                class="font-semibold text-slate-800"
+                                                >Git</span
+                                            >
+                                        </p>
+                                    </li>
+                                    <li
+                                        class="flex items-start text-sm text-slate-600"
+                                    >
+                                        <i
+                                            class="fas fa-check text-red-500 mt-1 mr-2.5 flex-shrink-0"
+                                        ></i>
+                                        <p class="leading-snug">
+                                            Min.
+                                            <span
+                                                class="font-semibold text-slate-800"
+                                                >3 ans</span
+                                            >
+                                            d'expérience
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Yellow Card -->
+                        <div
+                            class="bg-white rounded-2xl card-shadow border-t-8 border-yellow-400 flex flex-col transform hover:-translate-y-1 transition-transform duration-300"
+                        >
+                            <div class="p-6 pb-2">
+                                <div
+                                    class="flex justify-between items-start mb-2"
+                                >
+                                    <div class="bg-yellow-50 p-2 rounded-lg">
+                                        <i
+                                            class="fas fa-star text-yellow-500 text-xl"
+                                        ></i>
+                                    </div>
+                                    <i
+                                        class="fas fa-square text-yellow-400 text-3xl shadow-sm border border-yellow-200 rounded"
+                                    ></i>
+                                </div>
+                                <h3
+                                    class="text-lg font-bold text-slate-800 font-montserrat"
+                                >
+                                    Carton Jaune
+                                </h3>
+                                <p
+                                    class="text-xs font-bold text-yellow-500 uppercase tracking-wider"
+                                >
+                                    Importantes
+                                </p>
+                            </div>
+                            <div class="px-6 pb-6 flex-1">
+                                <div
+                                    class="w-full h-px bg-slate-100 mb-4"
+                                ></div>
+                                <ul class="space-y-3">
+                                    <li
+                                        class="flex items-start text-sm text-slate-600"
+                                    >
+                                        <i
+                                            class="fas fa-check text-yellow-400 mt-1 mr-2.5 flex-shrink-0"
+                                        ></i>
+                                        <p class="leading-snug">
+                                            Expérience
+                                            <span
+                                                class="font-semibold text-slate-800"
+                                                >DevOps</span
+                                            >
+                                            (Docker, CI/CD)
+                                        </p>
+                                    </li>
+                                    <li
+                                        class="flex items-start text-sm text-slate-600"
+                                    >
+                                        <i
+                                            class="fas fa-check text-yellow-400 mt-1 mr-2.5 flex-shrink-0"
+                                        ></i>
+                                        <p class="leading-snug">
+                                            <span
+                                                class="font-semibold text-slate-800"
+                                                >GraphQL</span
+                                            >
+                                            ou REST API
+                                        </p>
+                                    </li>
+                                    <li
+                                        class="flex items-start text-sm text-slate-600"
+                                    >
+                                        <i
+                                            class="fas fa-check text-yellow-400 mt-1 mr-2.5 flex-shrink-0"
+                                        ></i>
+                                        <p class="leading-snug">
+                                            Méthodologies
+                                            <span
+                                                class="font-semibold text-slate-800"
+                                                >Agile / Scrum</span
+                                            >
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Green Card -->
+                        <div
+                            class="bg-white rounded-2xl card-shadow border-t-8 border-green-500 flex flex-col transform hover:-translate-y-1 transition-transform duration-300"
+                        >
+                            <div class="p-6 pb-2">
+                                <div
+                                    class="flex justify-between items-start mb-2"
+                                >
+                                    <div class="bg-green-50 p-2 rounded-lg">
+                                        <i
+                                            class="fas fa-plus-circle text-green-500 text-xl"
+                                        ></i>
+                                    </div>
+                                    <i
+                                        class="fas fa-square text-green-500 text-3xl shadow-sm border border-green-200 rounded"
+                                    ></i>
+                                </div>
+                                <h3
+                                    class="text-lg font-bold text-slate-800 font-montserrat"
+                                >
+                                    Carton Vert
+                                </h3>
+                                <p
+                                    class="text-xs font-bold text-green-500 uppercase tracking-wider"
+                                >
+                                    Bonus / Atouts
+                                </p>
+                            </div>
+                            <div class="px-6 pb-6 flex-1">
+                                <div
+                                    class="w-full h-px bg-slate-100 mb-4"
+                                ></div>
+                                <ul class="space-y-3">
+                                    <li
+                                        class="flex items-start text-sm text-slate-600"
+                                    >
+                                        <i
+                                            class="fas fa-check text-green-500 mt-1 mr-2.5 flex-shrink-0"
+                                        ></i>
+                                        <p class="leading-snug">
+                                            Architecture
+                                            <span
+                                                class="font-semibold text-slate-800"
+                                                >Microservices</span
+                                            >
+                                        </p>
+                                    </li>
+                                    <li
+                                        class="flex items-start text-sm text-slate-600"
+                                    >
+                                        <i
+                                            class="fas fa-check text-green-500 mt-1 mr-2.5 flex-shrink-0"
+                                        ></i>
+                                        <p class="leading-snug">
+                                            Contributions
+                                            <span
+                                                class="font-semibold text-slate-800"
+                                                >Open-source</span
+                                            >
+                                        </p>
+                                    </li>
+                                    <li
+                                        class="flex items-start text-sm text-slate-600"
+                                    >
+                                        <i
+                                            class="fas fa-check text-green-500 mt-1 mr-2.5 flex-shrink-0"
+                                        ></i>
+                                        <p class="leading-snug">
+                                            Connaissance
+                                            <span
+                                                class="font-semibold text-slate-800"
+                                                >TypeScript</span
+                                            >
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer numbering -->
+            <div class="px-12 pb-2 text-right">
+                <span
+                    class="text-slate-400 font-montserrat font-bold text-lg opacity-50 leading-none"
+                    >03</span
+                >
+            </div>
+        </div>
+    </body>
+</html>

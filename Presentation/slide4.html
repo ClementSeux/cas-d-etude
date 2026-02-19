@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Questions Techniques et Soft Skills</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            .font-montserrat {
+                font-family: "Montserrat", sans-serif;
+            }
+            .font-roboto {
+                font-family: "Roboto", sans-serif;
+            }
+            .card-shadow {
+                box-shadow: 0 8px 22px -8px rgba(15, 23, 42, 0.12);
+            }
+            .section-title {
+                letter-spacing: 0.04em;
+            }
+            .q-title {
+                font-size: 12px;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+            .q-body {
+                font-size: 14px;
+                color: #334155;
+                line-height: 1.35;
+            }
+            .q-meta {
+                font-size: 13px;
+                color: #64748b;
+                margin-top: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w-[1280px] h-[720px] bg-slate-50 flex flex-col font-roboto">
+            <div
+                class="bg-white h-20 px-12 flex items-center justify-between shadow-sm"
+            >
+                <div class="flex items-center space-x-3">
+                    <div class="bg-blue-900 text-white p-1.5 rounded shadow-sm">
+                        <i class="fas fa-code-branch text-lg"></i>
+                    </div>
+                    <span
+                        class="text-xl font-bold text-slate-800 font-montserrat"
+                        >DevInnov'</span
+                    >
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span
+                        class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold uppercase tracking-wide"
+                        >Questions</span
+                    >
+                    <h1
+                        class="text-xl font-bold text-slate-700 font-montserrat"
+                    >
+                        Techniques & Soft Skills
+                    </h1>
+                </div>
+            </div>
+
+            <div class="flex-1 px-14 py-8 flex flex-col">
+                <div class="mb-6 flex items-center justify-between">
+                    <div>
+                        <h2
+                            class="text-3xl font-extrabold text-slate-800 font-montserrat"
+                        >
+                            Questions d'entretien clés
+                        </h2>
+                        <p class="text-slate-500 mt-2">
+                            Évaluer compétences techniques puis comportementales
+                            (méthode STAR)
+                        </p>
+                    </div>
+                    <div
+                        class="text-sm font-semibold px-3 py-2 bg-blue-50 text-blue-700 rounded border border-blue-100"
+                    >
+                        75 min
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-5 flex-1 min-h-0">
+                    <div
+                        class="grid grid-rows-[auto_repeat(4,minmax(0,1fr))] gap-3 h-full min-h-0"
+                    >
+                        <div
+                            class="px-3 py-2 bg-blue-50 rounded-lg border border-blue-100 flex items-center"
+                        >
+                            <h3
+                                class="text-xs font-bold text-blue-800 uppercase section-title"
+                            >
+                                Hard Skills
+                            </h3>
+                        </div>
+
+                        <div
+                            class="bg-white rounded-xl p-4 card-shadow border-l-4 border-blue-500"
+                        >
+                            <p class="q-title text-blue-700">
+                                Q1 · Base de données
+                            </p>
+                            <p class="q-body">
+                                Expliquez la différence entre SQL et NoSQL et
+                                quand utiliser chaque type.
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-white rounded-xl p-4 card-shadow border-l-4 border-teal-500"
+                        >
+                            <p class="q-title text-teal-700">
+                                Q2 · Performance API
+                            </p>
+                            <p class="q-body">
+                                Comment optimiser une API qui renvoie des
+                                milliers de résultats ?
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-white rounded-xl p-4 card-shadow border-l-4 border-indigo-500"
+                        >
+                            <p class="q-title text-indigo-700">
+                                Q3 · Microservices
+                            </p>
+                            <p class="q-body">
+                                Quelle est votre expérience concrète des
+                                microservices et des défis associés ?
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-white rounded-xl p-4 card-shadow border-l-4 border-slate-700"
+                        >
+                            <p class="q-title text-slate-700">
+                                Q4 · Projet GitHub
+                            </p>
+                            <p class="q-body">
+                                Montrez un projet personnel et justifiez vos
+                                choix techniques.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="grid grid-rows-[auto_repeat(3,minmax(0,1fr))] gap-3 h-full min-h-0"
+                    >
+                        <div
+                            class="px-3 py-2 bg-indigo-50 rounded-lg border border-indigo-100 flex items-center"
+                        >
+                            <h3
+                                class="text-xs font-bold text-indigo-800 uppercase section-title"
+                            >
+                                Soft Skills (méthode STAR)
+                            </h3>
+                        </div>
+
+                        <div
+                            class="bg-white rounded-xl p-4 card-shadow border-l-4 border-red-500"
+                        >
+                            <p class="q-title text-red-700">
+                                Q1 · Gestion de crise
+                            </p>
+                            <p class="q-body">
+                                Décrivez une situation où vous avez résolu un
+                                bug critique en production.
+                            </p>
+                            <p class="q-meta">
+                                Évaluer : gestion de la pression, méthode de
+                                résolution.
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-white rounded-xl p-4 card-shadow border-l-4 border-orange-500"
+                        >
+                            <p class="q-title text-orange-700">
+                                Q2 · Conflit d'équipe
+                            </p>
+                            <p class="q-body">
+                                Racontez un conflit avec un membre de l'équipe
+                                et la manière dont vous l'avez résolu.
+                            </p>
+                            <p class="q-meta">
+                                Évaluer : communication, intelligence
+                                émotionnelle.
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-white rounded-xl p-4 card-shadow border-l-4 border-green-500"
+                        >
+                            <p class="q-title text-green-700">
+                                Q3 · Collaboration
+                            </p>
+                            <p class="q-body">
+                                Donnez un exemple de fonctionnalité complexe
+                                développée en équipe.
+                            </p>
+                            <p class="q-meta">
+                                Évaluer : coordination, ownership, impact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-12 pb-2 text-right">
+                <span
+                    class="text-slate-400 font-montserrat font-bold text-lg opacity-50 leading-none"
+                    >04</span
+                >
+            </div>
+        </div>
+    </body>
+</html>

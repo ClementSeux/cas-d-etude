@@ -1,0 +1,412 @@
+<!doctype html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Méthode d'Évaluation</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            .font-montserrat {
+                font-family: "Montserrat", sans-serif;
+            }
+            .font-roboto {
+                font-family: "Roboto", sans-serif;
+            }
+            .card-shadow {
+                box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.1);
+            }
+            .glass-effect {
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(10px);
+            }
+        </style>
+    </head>
+    <body>
+        <div
+            class="w-[1280px] h-[720px] bg-slate-50 relative flex flex-col overflow-hidden font-roboto"
+        >
+            <!-- Header Section -->
+            <div
+                class="bg-white h-20 px-12 flex items-center justify-between shadow-sm z-30 relative"
+            >
+                <div class="flex items-center space-x-3">
+                    <div class="bg-blue-900 text-white p-1.5 rounded shadow-sm">
+                        <i class="fas fa-code-branch text-lg"></i>
+                    </div>
+                    <span
+                        class="text-xl font-bold text-slate-800 font-montserrat"
+                        >DevInnov'</span
+                    >
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span
+                        class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-bold uppercase tracking-wide"
+                        >Section 4</span
+                    >
+                    <h1
+                        class="text-xl font-bold text-slate-700 font-montserrat"
+                    >
+                        Méthode d'Évaluation
+                    </h1>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="flex-1 flex p-10 space-x-6 relative z-10">
+                <!-- Left Column: Technical Skills (40%) -->
+                <div class="w-[40%] flex flex-col">
+                    <div
+                        class="bg-white rounded-2xl card-shadow flex-1 overflow-hidden flex flex-col border-t-4 border-blue-600"
+                    >
+                        <div
+                            class="p-6 bg-blue-50 border-b border-blue-100 flex justify-between items-center"
+                        >
+                            <div>
+                                <h2
+                                    class="text-xl font-bold text-slate-800 font-montserrat"
+                                >
+                                    Compétences Techniques
+                                </h2>
+                                <p class="text-sm text-slate-500">
+                                    Hard Skills &amp; Expertise
+                                </p>
+                            </div>
+                            <div
+                                class="w-16 h-16 rounded-full bg-white flex items-center justify-center border-4 border-blue-200 shadow-sm"
+                            >
+                                <span class="text-xl font-black text-blue-700"
+                                    >60</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="p-6 flex-1 flex flex-col justify-center space-y-5"
+                        >
+                            <!-- Item 1 -->
+                            <div>
+                                <div
+                                    class="flex justify-between text-sm font-bold text-slate-700 mb-1"
+                                >
+                                    <span>JavaScript / Node.js</span>
+                                    <span>20 pts</span>
+                                </div>
+                                <div
+                                    class="w-full h-3 bg-slate-100 rounded-full overflow-hidden"
+                                >
+                                    <div
+                                        class="h-full bg-blue-600 w-[33%] rounded-full"
+                                    ></div>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div>
+                                <div
+                                    class="flex justify-between text-sm font-bold text-slate-700 mb-1"
+                                >
+                                    <span>React / Vue.js / Angular</span>
+                                    <span>15 pts</span>
+                                </div>
+                                <div
+                                    class="w-full h-3 bg-slate-100 rounded-full overflow-hidden"
+                                >
+                                    <div
+                                        class="h-full bg-blue-500 w-[25%] rounded-full"
+                                    ></div>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div>
+                                <div
+                                    class="flex justify-between text-sm font-bold text-slate-700 mb-1"
+                                >
+                                    <span>Bases de données</span>
+                                    <span>10 pts</span>
+                                </div>
+                                <div
+                                    class="w-full h-3 bg-slate-100 rounded-full overflow-hidden"
+                                >
+                                    <div
+                                        class="h-full bg-blue-400 w-[16%] rounded-full"
+                                    ></div>
+                                </div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div>
+                                <div
+                                    class="flex justify-between text-sm font-bold text-slate-700 mb-1"
+                                >
+                                    <span>Git &amp; Versioning</span>
+                                    <span>10 pts</span>
+                                </div>
+                                <div
+                                    class="w-full h-3 bg-slate-100 rounded-full overflow-hidden"
+                                >
+                                    <div
+                                        class="h-full bg-blue-400 w-[16%] rounded-full"
+                                    ></div>
+                                </div>
+                            </div>
+                            <!-- Item 5 -->
+                            <div>
+                                <div
+                                    class="flex justify-between text-sm font-bold text-slate-700 mb-1"
+                                >
+                                    <span>DevOps / CI-CD</span>
+                                    <span>5 pts</span>
+                                </div>
+                                <div
+                                    class="w-full h-3 bg-slate-100 rounded-full overflow-hidden"
+                                >
+                                    <div
+                                        class="h-full bg-blue-300 w-[8%] rounded-full"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Middle Column: Soft Skills & Culture (30%) -->
+                <div class="w-[30%] flex flex-col space-y-6">
+                    <!-- Soft Skills Card -->
+                    <div
+                        class="bg-white rounded-2xl card-shadow flex-1 flex flex-col border-t-4 border-indigo-500"
+                    >
+                        <div
+                            class="px-6 py-4 border-b border-indigo-50 flex justify-between items-center bg-indigo-50 bg-opacity-30"
+                        >
+                            <h2
+                                class="text-lg font-bold text-slate-800 font-montserrat"
+                            >
+                                Soft Skills
+                            </h2>
+                            <div
+                                class="w-12 h-12 rounded-full bg-white flex items-center justify-center border-2 border-blue-200 shadow-sm"
+                            >
+                                <span class="text-sm font-black text-blue-700"
+                                    >30</span
+                                >
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4 flex-1">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div
+                                        class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center"
+                                    >
+                                        <i class="fas fa-comments text-sm"></i>
+                                    </div>
+                                    <span
+                                        class="text-sm font-medium text-slate-700"
+                                        >Communication</span
+                                    >
+                                </div>
+                                <span class="font-bold text-slate-800 text-sm"
+                                    >10</span
+                                >
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div
+                                        class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center"
+                                    >
+                                        <i class="fas fa-users text-sm"></i>
+                                    </div>
+                                    <span
+                                        class="text-sm font-medium text-slate-700"
+                                        >Esprit d'équipe</span
+                                    >
+                                </div>
+                                <span class="font-bold text-slate-800 text-sm"
+                                    >10</span
+                                >
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div
+                                        class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center"
+                                    >
+                                        <i
+                                            class="fas fa-puzzle-piece text-sm"
+                                        ></i>
+                                    </div>
+                                    <span
+                                        class="text-sm font-medium text-slate-700"
+                                        >Résolution Problèmes</span
+                                    >
+                                </div>
+                                <span class="font-bold text-slate-800 text-sm"
+                                    >10</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Culture Fit Card -->
+                    <div
+                        class="bg-white rounded-2xl card-shadow h-[40%] flex flex-col border-t-4 border-teal-500"
+                    >
+                        <div
+                            class="px-6 py-4 border-b border-teal-50 flex justify-between items-center bg-teal-50 bg-opacity-30"
+                        >
+                            <h2
+                                class="text-lg font-bold text-slate-800 font-montserrat"
+                            >
+                                Culture Fit
+                            </h2>
+                            <div
+                                class="w-12 h-12 rounded-full bg-white flex items-center justify-center border-2 border-blue-200 shadow-sm"
+                            >
+                                <span class="text-sm font-black text-blue-700"
+                                    >10</span
+                                >
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4 flex-1">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div
+                                        class="w-8 h-8 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center"
+                                    >
+                                        <i
+                                            class="fas fa-hand-holding-heart text-sm"
+                                        ></i>
+                                    </div>
+                                    <span
+                                        class="text-sm font-medium text-slate-700"
+                                        >Alignement Valeurs</span
+                                    >
+                                </div>
+                                <span class="font-bold text-slate-800 text-sm"
+                                    >5</span
+                                >
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div
+                                        class="w-8 h-8 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center"
+                                    >
+                                        <i class="fas fa-fire text-sm"></i>
+                                    </div>
+                                    <span
+                                        class="text-sm font-medium text-slate-700"
+                                        >Motivation Startup</span
+                                    >
+                                </div>
+                                <span class="font-bold text-slate-800 text-sm"
+                                    >5</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column: Rules & Logic (30%) -->
+                <div class="w-[30%] flex flex-col justify-between">
+                    <!-- Total Score Display -->
+                    <div
+                        class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-6 text-white text-center shadow-lg relative overflow-hidden mb-6"
+                    >
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-blue-700 rounded-full -mr-10 -mt-10 opacity-30"
+                        ></div>
+                        <div class="relative z-10">
+                            <p
+                                class="text-blue-100 text-sm font-bold uppercase tracking-widest mb-2"
+                            >
+                                Score Maximum
+                            </p>
+                            <div
+                                class="text-6xl font-black font-montserrat tracking-tight text-white"
+                            >
+                                100
+                            </div>
+                            <p class="text-blue-100 text-xs mt-2">
+                                Points Totaux
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Decision Logic -->
+                    <div
+                        class="bg-white rounded-2xl card-shadow p-6 flex-1 flex flex-col justify-center border border-slate-200"
+                    >
+                        <h3
+                            class="text-lg font-bold text-slate-800 font-montserrat mb-6 text-center border-b pb-2"
+                        >
+                            Critères de Sélection
+                        </h3>
+                        <!-- Rule 1 -->
+                        <div class="flex items-start mb-6">
+                            <div
+                                class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0 mr-4"
+                            >
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">
+                                    Seuil d'Admissibilité
+                                </h4>
+                                <p class="text-xs text-slate-500 mt-1">
+                                    Le candidat doit obtenir au minimum :
+                                </p>
+                                <div
+                                    class="mt-2 inline-block px-3 py-1 bg-green-50 text-green-700 rounded font-bold text-sm border border-green-200"
+                                >
+                                    70 / 100
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Rule 2 -->
+                        <div class="flex items-start">
+                            <div
+                                class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-600 flex-shrink-0 mr-4"
+                            >
+                                <i class="fas fa-ban"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">
+                                    Clause Éliminatoire
+                                </h4>
+                                <p class="text-xs text-slate-500 mt-1">
+                                    Rejet automatique si :
+                                </p>
+                                <div
+                                    class="mt-2 inline-block px-3 py-1 bg-red-50 text-red-700 rounded font-bold text-sm border border-red-200"
+                                >
+                                    Technique &lt; 40 pts
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative Elements -->
+            <div
+                class="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-blue-600 via-indigo-500 to-teal-400"
+            ></div>
+            <div
+                class="absolute -bottom-10 -right-10 w-64 h-64 bg-slate-200 rounded-full filter blur-3xl opacity-50 pointer-events-none"
+            ></div>
+            <!-- Footer Number -->
+            <div class="px-12 pb-2 text-right">
+                <span
+                    class="text-slate-400 font-montserrat font-bold text-lg opacity-50 leading-none"
+                    >06</span
+                >
+            </div>
+        </div>
+    </body>
+</html>

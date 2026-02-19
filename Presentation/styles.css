@@ -1,0 +1,145 @@
+/* Base layout */
+:root {
+    --bg: #0f172a; /* slate-900 */
+    --panel: #111827; /* gray-900 */
+    --text: #e5e7eb; /* gray-200 */
+    --muted: #9ca3af; /* gray-400 */
+    --accent: #2563eb; /* blue-600 */
+    --accent-2: #60a5fa; /* blue-400 */
+    --brand: #1e3a8a; /* blue-900 */
+    --good: #10b981; /* emerald-500 */
+}
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family:
+        "Roboto",
+        system-ui,
+        -apple-system,
+        Segoe UI,
+        Helvetica,
+        Arial,
+        sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Top bar */
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: linear-gradient(
+        180deg,
+        rgba(30, 58, 138, 0.7),
+        rgba(17, 24, 39, 0.85)
+    );
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(6px);
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo {
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    background: var(--brand);
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 800;
+}
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.btn {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn:hover {
+    background: var(--accent-2);
+}
+.counter {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+/* Stage and slide scaling wrapper */
+.stage {
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: 12px;
+}
+.slide-wrapper {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    transform-origin: top left;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+    border-radius: 14px;
+    overflow: hidden;
+}
+.slide-frame {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #fff;
+}
+
+/* Bottom bar */
+.bottombar {
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: rgba(17, 24, 39, 0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.progress {
+    flex: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    overflow: hidden;
+}
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent), var(--good));
+}
+.tips {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* Utility */
+.hidden {
+    display: none;
+}
