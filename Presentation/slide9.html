@@ -120,6 +120,34 @@
                         </div>
 
                         <div
+                            class="mb-4 text-xs text-slate-600 bg-slate-50 rounded-lg px-3 py-2 border border-slate-200 flex items-center justify-between"
+                        >
+                            <div class="font-semibold text-slate-700">
+                                Priorité des points :
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="flex items-center">
+                                    <span
+                                        class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block mr-1.5"
+                                    ></span
+                                    >Rouge = indispensable
+                                </span>
+                                <span class="flex items-center">
+                                    <span
+                                        class="w-2.5 h-2.5 rounded-full bg-orange-500 inline-block mr-1.5"
+                                    ></span
+                                    >Orange = important
+                                </span>
+                                <span class="flex items-center">
+                                    <span
+                                        class="w-2.5 h-2.5 rounded-full bg-green-500 inline-block mr-1.5"
+                                    ></span
+                                    >Vert = un plus
+                                </span>
+                            </div>
+                        </div>
+
+                        <div
                             class="score-scroll border border-slate-200 rounded-lg"
                         >
                             <table class="w-full text-sm">
@@ -140,6 +168,7 @@
                                         >
                                             Critères attendus
                                         </th>
+                                        <th class="text-center px-2 py-2 font-bold w-28">Priorité</th>
                                         <th
                                             class="text-center px-3 py-2 font-bold w-20"
                                         >
@@ -159,9 +188,13 @@
                                         >
                                             Technique
                                         </td>
-                                        <td class="px-3 py-2 text-slate-500" colspan="2">
+                                        <td
+                                            class="px-3 py-2 text-slate-500"
+                                            colspan="2"
+                                        >
                                             Bloc techniques fondamentales
                                         </td>
+                                        <td class="text-center text-slate-400">—</td>
                                         <td class="text-center font-bold">
                                             60
                                         </td>
@@ -172,10 +205,16 @@
                                             JavaScript / Node.js
                                         </td>
                                         <td class="px-3 py-2">
-                                            Comment gères-tu l'event loop et les opérations bloquantes ?
+                                            Comment gères-tu l'event loop et les
+                                            opérations bloquantes ?
                                         </td>
                                         <td class="px-3 py-2 text-slate-600">
-                                            Explique le non-bloquant, priorisation des tâches et exemple concret en prod.
+                                            Explique le non-bloquant,
+                                            priorisation des tâches et exemple
+                                            concret en prod.
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="inline-block px-2 py-0.5 rounded-full text-xs font-semibold bg-red-100 text-red-700">Rouge</span>
                                         </td>
                                         <td class="text-center">20</td>
                                         <td class="text-center">___</td>
@@ -185,10 +224,16 @@
                                             Framework Front (React/Vue/Angular)
                                         </td>
                                         <td class="px-3 py-2">
-                                            Décris un composant complexe que tu as implémenté.
+                                            Décris un composant complexe que tu
+                                            as implémenté.
                                         </td>
                                         <td class="px-3 py-2 text-slate-600">
-                                            Architecture claire, gestion d'état maîtrisée, performance et testabilité.
+                                            Architecture claire, gestion d'état
+                                            maîtrisée, performance et
+                                            testabilité.
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="inline-block px-2 py-0.5 rounded-full text-xs font-semibold bg-orange-100 text-orange-700">Orange</span>
                                         </td>
                                         <td class="text-center">15</td>
                                         <td class="text-center">___</td>
@@ -198,10 +243,16 @@
                                             SQL + NoSQL
                                         </td>
                                         <td class="px-3 py-2">
-                                            Quand choisis-tu SQL vs NoSQL pour un nouveau service ?
+                                            Quand choisis-tu SQL vs NoSQL pour
+                                            un nouveau service ?
                                         </td>
                                         <td class="px-3 py-2 text-slate-600">
-                                            Justifie par use case, cohérence/latence, volumétrie et évolution du modèle.
+                                            Justifie par use case,
+                                            cohérence/latence, volumétrie et
+                                            évolution du modèle.
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="inline-block px-2 py-0.5 rounded-full text-xs font-semibold bg-red-100 text-red-700">Rouge</span>
                                         </td>
                                         <td class="text-center">10</td>
                                         <td class="text-center">___</td>
@@ -211,10 +262,17 @@
                                             Git & versioning
                                         </td>
                                         <td class="px-3 py-2">
-                                            Quelle stratégie de branches utilises-tu sur une équipe de 6 devs ?
+                                            Quelle stratégie de branches
+                                            utilises-tu sur une équipe de 6 devs
+                                            ?
                                         </td>
                                         <td class="px-3 py-2 text-slate-600">
-                                            Workflow cohérent, gestion des PR, qualité des revues et résolution des conflits.
+                                            Workflow cohérent, gestion des PR,
+                                            qualité des revues et résolution des
+                                            conflits.
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="inline-block px-2 py-0.5 rounded-full text-xs font-semibold bg-orange-100 text-orange-700">Orange</span>
                                         </td>
                                         <td class="text-center">10</td>
                                         <td class="text-center">___</td>
@@ -224,10 +282,16 @@
                                             DevOps / CI-CD
                                         </td>
                                         <td class="px-3 py-2">
-                                            Comment sécurises-tu une pipeline CI/CD de bout en bout ?
+                                            Comment sécurises-tu une pipeline
+                                            CI/CD de bout en bout ?
                                         </td>
                                         <td class="px-3 py-2 text-slate-600">
-                                            Automatisation, contrôles qualité, rollback, monitoring et gestion des secrets.
+                                            Automatisation, contrôles qualité,
+                                            rollback, monitoring et gestion des
+                                            secrets.
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="inline-block px-2 py-0.5 rounded-full text-xs font-semibold bg-green-100 text-green-700">Vert</span>
                                         </td>
                                         <td class="text-center">5</td>
                                         <td class="text-center">___</td>
@@ -239,9 +303,13 @@
                                         >
                                             Soft Skills
                                         </td>
-                                        <td class="px-3 py-2 text-slate-500" colspan="2">
+                                        <td
+                                            class="px-3 py-2 text-slate-500"
+                                            colspan="2"
+                                        >
                                             Bloc collaboration et exécution
                                         </td>
+                                        <td class="text-center text-slate-400">—</td>
                                         <td class="text-center font-bold">
                                             30
                                         </td>
@@ -252,10 +320,16 @@
                                             Communication
                                         </td>
                                         <td class="px-3 py-2">
-                                            Donne un exemple où tu as dû vulgariser un sujet complexe.
+                                            Donne un exemple où tu as dû
+                                            vulgariser un sujet complexe.
                                         </td>
                                         <td class="px-3 py-2 text-slate-600">
-                                            Message structuré, adaptation au public, synthèse claire et actionnable.
+                                            Message structuré, adaptation au
+                                            public, synthèse claire et
+                                            actionnable.
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="inline-block px-2 py-0.5 rounded-full text-xs font-semibold bg-orange-100 text-orange-700">Orange</span>
                                         </td>
                                         <td class="text-center">10</td>
                                         <td class="text-center">___</td>
@@ -265,10 +339,16 @@
                                             Esprit d'équipe
                                         </td>
                                         <td class="px-3 py-2">
-                                            Raconte une situation de désaccord technique en équipe.
+                                            Raconte une situation de désaccord
+                                            technique en équipe.
                                         </td>
                                         <td class="px-3 py-2 text-slate-600">
-                                            Écoute active, recherche de compromis, décision collective et respect des rôles.
+                                            Écoute active, recherche de
+                                            compromis, décision collective et
+                                            respect des rôles.
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="inline-block px-2 py-0.5 rounded-full text-xs font-semibold bg-orange-100 text-orange-700">Orange</span>
                                         </td>
                                         <td class="text-center">10</td>
                                         <td class="text-center">___</td>
@@ -278,10 +358,16 @@
                                             Résolution de problèmes
                                         </td>
                                         <td class="px-3 py-2">
-                                            Décris un incident critique et ton plan de résolution.
+                                            Décris un incident critique et ton
+                                            plan de résolution.
                                         </td>
                                         <td class="px-3 py-2 text-slate-600">
-                                            Démarche structurée, priorisation, mesure d'impact et post-mortem avec actions.
+                                            Démarche structurée, priorisation,
+                                            mesure d'impact et post-mortem avec
+                                            actions.
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="inline-block px-2 py-0.5 rounded-full text-xs font-semibold bg-red-100 text-red-700">Rouge</span>
                                         </td>
                                         <td class="text-center">10</td>
                                         <td class="text-center">___</td>
@@ -293,9 +379,13 @@
                                         >
                                             Culture Fit
                                         </td>
-                                        <td class="px-3 py-2 text-slate-500" colspan="2">
+                                        <td
+                                            class="px-3 py-2 text-slate-500"
+                                            colspan="2"
+                                        >
                                             Bloc valeurs et motivation
                                         </td>
+                                        <td class="text-center text-slate-400">—</td>
                                         <td class="text-center font-bold">
                                             10
                                         </td>
@@ -306,10 +396,16 @@
                                             Alignement valeurs
                                         </td>
                                         <td class="px-3 py-2">
-                                            Quelles valeurs d'équipe sont non négociables pour toi ?
+                                            Quelles valeurs d'équipe sont non
+                                            négociables pour toi ?
                                         </td>
                                         <td class="px-3 py-2 text-slate-600">
-                                            Cohérence avec la culture DevInnov', ownership et responsabilité collective.
+                                            Cohérence avec la culture DevInnov',
+                                            ownership et responsabilité
+                                            collective.
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="inline-block px-2 py-0.5 rounded-full text-xs font-semibold bg-orange-100 text-orange-700">Orange</span>
                                         </td>
                                         <td class="text-center">5</td>
                                         <td class="text-center">___</td>
@@ -319,10 +415,16 @@
                                             Motivation startup
                                         </td>
                                         <td class="px-3 py-2">
-                                            Pourquoi rejoindre une startup en phase de scaling ?
+                                            Pourquoi rejoindre une startup en
+                                            phase de scaling ?
                                         </td>
                                         <td class="px-3 py-2 text-slate-600">
-                                            Motivation authentique, autonomie, capacité d'adaptation et apprentissage continu.
+                                            Motivation authentique, autonomie,
+                                            capacité d'adaptation et
+                                            apprentissage continu.
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="inline-block px-2 py-0.5 rounded-full text-xs font-semibold bg-green-100 text-green-700">Vert</span>
                                         </td>
                                         <td class="text-center">5</td>
                                         <td class="text-center">___</td>
@@ -330,7 +432,10 @@
                                 </tbody>
                                 <tfoot class="bg-slate-800 text-white">
                                     <tr>
-                                        <td class="px-3 py-2 font-bold" colspan="3">
+                                        <td
+                                            class="px-3 py-2 font-bold"
+                                            colspan="4"
+                                        >
                                             Total
                                         </td>
                                         <td class="text-center font-bold">
@@ -347,7 +452,9 @@
                         <div
                             class="mt-4 text-xs text-slate-500 bg-blue-50 rounded-md p-3 border border-blue-100"
                         >
-                            Échelle recommandée : 0 = incorrect/non répondu, 1-2 = partiel, 3-4 = solide, 5 = excellent. STAR attendu sur les questions comportementales.
+                            Échelle recommandée : 0 = incorrect/non répondu, 1-2
+                            = partiel, 3-4 = solide, 5 = excellent. STAR attendu
+                            sur les questions comportementales.
                         </div>
                     </div>
                 </div>
