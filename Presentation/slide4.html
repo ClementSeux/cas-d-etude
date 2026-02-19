@@ -35,19 +35,19 @@
                 letter-spacing: 0.04em;
             }
             .q-title {
-                font-size: 12px;
+                font-size: 11px;
                 font-weight: 700;
-                margin-bottom: 8px;
+                margin-bottom: 6px;
             }
             .q-body {
-                font-size: 14px;
+                font-size: 12px;
                 color: #334155;
-                line-height: 1.35;
+                line-height: 1.25;
             }
             .q-meta {
-                font-size: 13px;
+                font-size: 11px;
                 color: #64748b;
-                margin-top: 8px;
+                margin-top: 6px;
             }
         </style>
     </head>
@@ -78,29 +78,54 @@
                 </div>
             </div>
 
-            <div class="flex-1 px-14 py-8 flex flex-col">
-                <div class="mb-6 flex items-center justify-between">
+            <div class="flex-1 px-12 py-6 flex flex-col">
+                <div class="mb-4 flex items-center justify-between">
                     <div>
                         <h2
-                            class="text-3xl font-extrabold text-slate-800 font-montserrat"
+                            class="text-2xl font-extrabold text-slate-800 font-montserrat"
                         >
                             Questions d'entretien clés
                         </h2>
-                        <p class="text-slate-500 mt-2">
+                        <p class="text-slate-500 mt-1 text-sm">
                             Évaluer compétences techniques puis comportementales
                             (méthode STAR)
                         </p>
+                        <div
+                            class="mt-2 text-[10px] text-slate-600 bg-slate-100 rounded-md px-2.5 py-1 border border-slate-200 inline-flex items-center space-x-3"
+                        >
+                            <span class="font-semibold text-slate-700"
+                                >Priorité :</span
+                            >
+                            <span class="flex items-center"
+                                ><span
+                                    class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block mr-1.5"
+                                ></span
+                                >Rouge = indispensable</span
+                            >
+                            <span class="flex items-center"
+                                ><span
+                                    class="w-2.5 h-2.5 rounded-full bg-orange-500 inline-block mr-1.5"
+                                ></span
+                                >Orange = important</span
+                            >
+                            <span class="flex items-center"
+                                ><span
+                                    class="w-2.5 h-2.5 rounded-full bg-green-500 inline-block mr-1.5"
+                                ></span
+                                >Vert = un plus</span
+                            >
+                        </div>
                     </div>
                     <div
-                        class="text-sm font-semibold px-3 py-2 bg-blue-50 text-blue-700 rounded border border-blue-100"
+                        class="text-xs font-semibold px-2.5 py-1.5 bg-blue-50 text-blue-700 rounded border border-blue-100"
                     >
                         1 heure d'entretien + 1h de test technique
                     </div>
                 </div>
 
-                <div class="grid grid-cols-2 gap-5 flex-1 min-h-0">
+                <div class="grid grid-cols-2 gap-4 flex-1 min-h-0">
                     <div
-                        class="grid grid-rows-[auto_repeat(4,minmax(0,1fr))] gap-3 h-full min-h-0"
+                        class="grid grid-rows-[auto_repeat(4,minmax(0,1fr))] gap-2.5 h-full min-h-0"
                     >
                         <div
                             class="px-3 py-2 bg-blue-50 rounded-lg border border-blue-100 flex items-center"
@@ -113,56 +138,80 @@
                         </div>
 
                         <div
-                            class="bg-white rounded-xl p-4 card-shadow border-l-4 border-blue-500"
+                            class="bg-white rounded-xl p-3 card-shadow border-l-4 border-red-500"
                         >
-                            <p class="q-title text-blue-700">
+                            <p class="q-title text-red-700">
                                 Q1 · Base de données
                             </p>
                             <p class="q-body">
                                 Expliquez la différence entre SQL et NoSQL et
                                 quand utiliser chaque type.
                             </p>
+                            <p class="q-meta">
+                                Priorité :
+                                <span class="font-semibold text-red-700"
+                                    >Rouge (indispensable)</span
+                                >
+                            </p>
                         </div>
 
                         <div
-                            class="bg-white rounded-xl p-4 card-shadow border-l-4 border-teal-500"
+                            class="bg-white rounded-xl p-3 card-shadow border-l-4 border-red-500"
                         >
-                            <p class="q-title text-teal-700">
+                            <p class="q-title text-red-700">
                                 Q2 · Performance API
                             </p>
                             <p class="q-body">
                                 Comment optimiser une API qui renvoie des
                                 milliers de résultats ?
                             </p>
+                            <p class="q-meta">
+                                Priorité :
+                                <span class="font-semibold text-red-700"
+                                    >Rouge (indispensable)</span
+                                >
+                            </p>
                         </div>
 
                         <div
-                            class="bg-white rounded-xl p-4 card-shadow border-l-4 border-indigo-500"
+                            class="bg-white rounded-xl p-3 card-shadow border-l-4 border-orange-500"
                         >
-                            <p class="q-title text-indigo-700">
+                            <p class="q-title text-orange-700">
                                 Q3 · Microservices
                             </p>
                             <p class="q-body">
                                 Quelle est votre expérience concrète des
                                 microservices et des défis associés ?
                             </p>
+                            <p class="q-meta">
+                                Priorité :
+                                <span class="font-semibold text-orange-700"
+                                    >Orange (important)</span
+                                >
+                            </p>
                         </div>
 
                         <div
-                            class="bg-white rounded-xl p-4 card-shadow border-l-4 border-slate-700"
+                            class="bg-white rounded-xl p-3 card-shadow border-l-4 border-green-500"
                         >
-                            <p class="q-title text-slate-700">
+                            <p class="q-title text-green-700">
                                 Q4 · Projet GitHub
                             </p>
                             <p class="q-body">
                                 Montrez un projet personnel et justifiez vos
                                 choix techniques.
                             </p>
+                            <p class="q-meta">
+                                Priorité :
+                                <span class="font-semibold text-green-700"
+                                    >Vert (un plus)</span
+                                >
+                            </p>
                         </div>
                     </div>
 
                     <div
-                        class="grid grid-rows-[auto_repeat(3,minmax(0,1fr))] gap-3 h-full min-h-0"
+                        class="grid grid-rows-[auto_repeat(3,minmax(0,1fr))] gap-2.5 h-full min-h-0"
                     >
                         <div
                             class="px-3 py-2 bg-indigo-50 rounded-lg border border-indigo-100 flex items-center"
@@ -175,7 +224,7 @@
                         </div>
 
                         <div
-                            class="bg-white rounded-xl p-4 card-shadow border-l-4 border-red-500"
+                            class="bg-white rounded-xl p-3 card-shadow border-l-4 border-red-500"
                         >
                             <p class="q-title text-red-700">
                                 Q1 · Gestion de crise
@@ -188,10 +237,16 @@
                                 Évaluer : gestion de la pression, méthode de
                                 résolution.
                             </p>
+                            <p class="q-meta">
+                                Priorité :
+                                <span class="font-semibold text-red-700"
+                                    >Rouge (indispensable)</span
+                                >
+                            </p>
                         </div>
 
                         <div
-                            class="bg-white rounded-xl p-4 card-shadow border-l-4 border-orange-500"
+                            class="bg-white rounded-xl p-3 card-shadow border-l-4 border-orange-500"
                         >
                             <p class="q-title text-orange-700">
                                 Q2 · Conflit d'équipe
@@ -204,10 +259,16 @@
                                 Évaluer : communication, intelligence
                                 émotionnelle.
                             </p>
+                            <p class="q-meta">
+                                Priorité :
+                                <span class="font-semibold text-orange-700"
+                                    >Orange (important)</span
+                                >
+                            </p>
                         </div>
 
                         <div
-                            class="bg-white rounded-xl p-4 card-shadow border-l-4 border-green-500"
+                            class="bg-white rounded-xl p-3 card-shadow border-l-4 border-green-500"
                         >
                             <p class="q-title text-green-700">
                                 Q3 · Collaboration
@@ -218,6 +279,12 @@
                             </p>
                             <p class="q-meta">
                                 Évaluer : coordination, ownership, impact.
+                            </p>
+                            <p class="q-meta">
+                                Priorité :
+                                <span class="font-semibold text-green-700"
+                                    >Vert (un plus)</span
+                                >
                             </p>
                         </div>
                     </div>
