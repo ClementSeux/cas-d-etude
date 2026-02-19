@@ -32,7 +32,7 @@
                 box-shadow: 0 8px 24px -6px rgba(15, 23, 42, 0.12);
             }
             .score-scroll {
-                height: 420px;
+                height: 500px;
                 overflow-y: scroll;
                 scrollbar-gutter: stable;
             }
@@ -70,7 +70,7 @@
             <div class="flex-1 p-8 overflow-y-auto">
                 <div class="grid grid-cols-12 gap-6 min-h-full">
                     <div
-                        class="col-span-8 bg-white rounded-2xl card-shadow p-6 border border-slate-100 flex flex-col min-h-0"
+                        class="col-span-12 bg-white rounded-2xl card-shadow p-6 border border-slate-100 flex flex-col min-h-0"
                     >
                         <div class="flex items-center justify-between mb-4">
                             <h2
@@ -131,12 +131,22 @@
                                             Critère
                                         </th>
                                         <th
-                                            class="text-center px-3 py-2 font-bold w-24"
+                                            class="text-left px-3 py-2 font-bold"
+                                        >
+                                            Question exemple
+                                        </th>
+                                        <th
+                                            class="text-left px-3 py-2 font-bold"
+                                        >
+                                            Critères attendus
+                                        </th>
+                                        <th
+                                            class="text-center px-3 py-2 font-bold w-20"
                                         >
                                             Max
                                         </th>
                                         <th
-                                            class="text-center px-3 py-2 font-bold w-24"
+                                            class="text-center px-3 py-2 font-bold w-20"
                                         >
                                             Score
                                         </th>
@@ -149,6 +159,9 @@
                                         >
                                             Technique
                                         </td>
+                                        <td class="px-3 py-2 text-slate-500" colspan="2">
+                                            Bloc techniques fondamentales
+                                        </td>
                                         <td class="text-center font-bold">
                                             60
                                         </td>
@@ -158,12 +171,24 @@
                                         <td class="px-3 py-2 pl-6">
                                             JavaScript / Node.js
                                         </td>
+                                        <td class="px-3 py-2">
+                                            Comment gères-tu l'event loop et les opérations bloquantes ?
+                                        </td>
+                                        <td class="px-3 py-2 text-slate-600">
+                                            Explique le non-bloquant, priorisation des tâches et exemple concret en prod.
+                                        </td>
                                         <td class="text-center">20</td>
                                         <td class="text-center">___</td>
                                     </tr>
                                     <tr class="border-t">
                                         <td class="px-3 py-2 pl-6">
                                             Framework Front (React/Vue/Angular)
+                                        </td>
+                                        <td class="px-3 py-2">
+                                            Décris un composant complexe que tu as implémenté.
+                                        </td>
+                                        <td class="px-3 py-2 text-slate-600">
+                                            Architecture claire, gestion d'état maîtrisée, performance et testabilité.
                                         </td>
                                         <td class="text-center">15</td>
                                         <td class="text-center">___</td>
@@ -172,6 +197,12 @@
                                         <td class="px-3 py-2 pl-6">
                                             SQL + NoSQL
                                         </td>
+                                        <td class="px-3 py-2">
+                                            Quand choisis-tu SQL vs NoSQL pour un nouveau service ?
+                                        </td>
+                                        <td class="px-3 py-2 text-slate-600">
+                                            Justifie par use case, cohérence/latence, volumétrie et évolution du modèle.
+                                        </td>
                                         <td class="text-center">10</td>
                                         <td class="text-center">___</td>
                                     </tr>
@@ -179,12 +210,24 @@
                                         <td class="px-3 py-2 pl-6">
                                             Git & versioning
                                         </td>
+                                        <td class="px-3 py-2">
+                                            Quelle stratégie de branches utilises-tu sur une équipe de 6 devs ?
+                                        </td>
+                                        <td class="px-3 py-2 text-slate-600">
+                                            Workflow cohérent, gestion des PR, qualité des revues et résolution des conflits.
+                                        </td>
                                         <td class="text-center">10</td>
                                         <td class="text-center">___</td>
                                     </tr>
                                     <tr class="border-t">
                                         <td class="px-3 py-2 pl-6">
                                             DevOps / CI-CD
+                                        </td>
+                                        <td class="px-3 py-2">
+                                            Comment sécurises-tu une pipeline CI/CD de bout en bout ?
+                                        </td>
+                                        <td class="px-3 py-2 text-slate-600">
+                                            Automatisation, contrôles qualité, rollback, monitoring et gestion des secrets.
                                         </td>
                                         <td class="text-center">5</td>
                                         <td class="text-center">___</td>
@@ -196,6 +239,9 @@
                                         >
                                             Soft Skills
                                         </td>
+                                        <td class="px-3 py-2 text-slate-500" colspan="2">
+                                            Bloc collaboration et exécution
+                                        </td>
                                         <td class="text-center font-bold">
                                             30
                                         </td>
@@ -205,6 +251,12 @@
                                         <td class="px-3 py-2 pl-6">
                                             Communication
                                         </td>
+                                        <td class="px-3 py-2">
+                                            Donne un exemple où tu as dû vulgariser un sujet complexe.
+                                        </td>
+                                        <td class="px-3 py-2 text-slate-600">
+                                            Message structuré, adaptation au public, synthèse claire et actionnable.
+                                        </td>
                                         <td class="text-center">10</td>
                                         <td class="text-center">___</td>
                                     </tr>
@@ -212,12 +264,24 @@
                                         <td class="px-3 py-2 pl-6">
                                             Esprit d'équipe
                                         </td>
+                                        <td class="px-3 py-2">
+                                            Raconte une situation de désaccord technique en équipe.
+                                        </td>
+                                        <td class="px-3 py-2 text-slate-600">
+                                            Écoute active, recherche de compromis, décision collective et respect des rôles.
+                                        </td>
                                         <td class="text-center">10</td>
                                         <td class="text-center">___</td>
                                     </tr>
                                     <tr class="border-t">
                                         <td class="px-3 py-2 pl-6">
                                             Résolution de problèmes
+                                        </td>
+                                        <td class="px-3 py-2">
+                                            Décris un incident critique et ton plan de résolution.
+                                        </td>
+                                        <td class="px-3 py-2 text-slate-600">
+                                            Démarche structurée, priorisation, mesure d'impact et post-mortem avec actions.
                                         </td>
                                         <td class="text-center">10</td>
                                         <td class="text-center">___</td>
@@ -229,6 +293,9 @@
                                         >
                                             Culture Fit
                                         </td>
+                                        <td class="px-3 py-2 text-slate-500" colspan="2">
+                                            Bloc valeurs et motivation
+                                        </td>
                                         <td class="text-center font-bold">
                                             10
                                         </td>
@@ -238,6 +305,12 @@
                                         <td class="px-3 py-2 pl-6">
                                             Alignement valeurs
                                         </td>
+                                        <td class="px-3 py-2">
+                                            Quelles valeurs d'équipe sont non négociables pour toi ?
+                                        </td>
+                                        <td class="px-3 py-2 text-slate-600">
+                                            Cohérence avec la culture DevInnov', ownership et responsabilité collective.
+                                        </td>
                                         <td class="text-center">5</td>
                                         <td class="text-center">___</td>
                                     </tr>
@@ -245,13 +318,19 @@
                                         <td class="px-3 py-2 pl-6">
                                             Motivation startup
                                         </td>
+                                        <td class="px-3 py-2">
+                                            Pourquoi rejoindre une startup en phase de scaling ?
+                                        </td>
+                                        <td class="px-3 py-2 text-slate-600">
+                                            Motivation authentique, autonomie, capacité d'adaptation et apprentissage continu.
+                                        </td>
                                         <td class="text-center">5</td>
                                         <td class="text-center">___</td>
                                     </tr>
                                 </tbody>
                                 <tfoot class="bg-slate-800 text-white">
                                     <tr>
-                                        <td class="px-3 py-2 font-bold">
+                                        <td class="px-3 py-2 font-bold" colspan="3">
                                             Total
                                         </td>
                                         <td class="text-center font-bold">
@@ -264,95 +343,11 @@
                                 </tfoot>
                             </table>
                         </div>
-                    </div>
-
-                    <div class="col-span-4 flex flex-col gap-4">
-                        <div
-                            class="bg-white rounded-2xl card-shadow p-5 border-l-4 border-green-500"
-                        >
-                            <h3
-                                class="text-lg font-bold text-slate-800 font-montserrat mb-2"
-                            >
-                                Règles de décision
-                            </h3>
-                            <ul class="text-sm text-slate-600 space-y-2">
-                                <li class="flex items-start">
-                                    <i
-                                        class="fas fa-check-circle text-green-500 mt-1 mr-2"
-                                    ></i
-                                    >Admissible si total ≥
-                                    <span class="font-bold ml-1">70/100</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i
-                                        class="fas fa-ban text-red-500 mt-1 mr-2"
-                                    ></i
-                                    >Éliminé si technique &lt;
-                                    <span class="font-bold ml-1">40/60</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i
-                                        class="fas fa-users text-blue-500 mt-1 mr-2"
-                                    ></i
-                                    >Validation finale: RH + Lead/CTO + Culture
-                                    Squad
-                                </li>
-                            </ul>
-                        </div>
 
                         <div
-                            class="bg-white rounded-2xl card-shadow p-5 border-l-4 border-blue-500"
+                            class="mt-4 text-xs text-slate-500 bg-blue-50 rounded-md p-3 border border-blue-100"
                         >
-                            <h3
-                                class="text-lg font-bold text-slate-800 font-montserrat mb-2"
-                            >
-                                Échelle de notation
-                            </h3>
-                            <ul class="text-sm text-slate-600 space-y-2">
-                                <li>
-                                    <span class="font-bold text-blue-700"
-                                        >0</span
-                                    >
-                                    : incorrect / non répondu
-                                </li>
-                                <li>
-                                    <span class="font-bold text-blue-700"
-                                        >1-2</span
-                                    >
-                                    : partiel, lacunaire
-                                </li>
-                                <li>
-                                    <span class="font-bold text-blue-700"
-                                        >3-4</span
-                                    >
-                                    : solide, correct
-                                </li>
-                                <li>
-                                    <span class="font-bold text-blue-700"
-                                        >5</span
-                                    >
-                                    : excellent, argumenté
-                                </li>
-                            </ul>
-                            <div
-                                class="mt-3 text-xs text-slate-500 bg-blue-50 rounded-md p-2 border border-blue-100"
-                            >
-                                STAR attendu en comportemental : Situation,
-                                Tâche, Action, Résultat (+ apprentissage bonus).
-                            </div>
-                        </div>
-
-                        <div class="bg-blue-900 text-white rounded-2xl p-5">
-                            <p
-                                class="text-xs uppercase tracking-widest text-blue-200"
-                            >
-                                Usage
-                            </p>
-                            <p class="text-sm mt-2 leading-relaxed">
-                                Cette grille sert de support standard pendant
-                                l'entretien et pour la comparaison objective
-                                entre candidats.
-                            </p>
+                            Échelle recommandée : 0 = incorrect/non répondu, 1-2 = partiel, 3-4 = solide, 5 = excellent. STAR attendu sur les questions comportementales.
                         </div>
                     </div>
                 </div>
